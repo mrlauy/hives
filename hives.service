@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=idle
-ExecStart=/home/lauy/hives/env/bin/python /home/lauy/hives/hives.py
+ExecStart=/home/pi/hives/env/bin/python /home/pi/hives/hives.py
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=hives

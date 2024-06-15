@@ -1,0 +1,15 @@
+[Unit]
+Description=HivesService
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=idle
+ExecStart=/home/lauy/hives/env/bin/python /home/lauy/hives/hives.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=hives
+User=spider
+
+[Install]
+WantedBy=multi-user.target
